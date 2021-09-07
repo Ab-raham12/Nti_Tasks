@@ -11,16 +11,21 @@ echo "<hr>";
 //input : z    output : a
 //Answer num1
 $char = 'z';
-$next_char = ++$char; 
-if (strlen($next_char) > 1) { // if you go beyond z or Z reset to a or A
- $next_char = $next_char[0];
- echo $next_char;
+function get_a($arg){
+	$next_char = ++$arg; 
+	if (strlen($next_char) > 1) { // if you go beyond z or Z reset to a or A
+ 		$next_char = $next_char[0];
+ 		echo $next_char;
+	}
 }
+get_a($char);
 echo "<br>";
 //Answer2
-$character = 'z';
-$character++;
-echo $character[1];
+function GET_char($param = 'z'){
+	$param++;
+	echo $param[1];
+}
+GET_char();
 echo "<hr>";
 //Write a PHP function to extract the file name from the following string.
 $link = 'www.example.com/public_html/index.php';
