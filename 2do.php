@@ -6,4 +6,5 @@ End Date	<input type="date" name="edate" > <br> <br>
 Task id <input type="text" name="id"> <br> <br>
 	<button name="add">Add </button>
 	<button name="del">Remove </button>
+	<button name="show">Show my task </button>
 </form>
